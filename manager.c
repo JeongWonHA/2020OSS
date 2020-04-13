@@ -15,6 +15,7 @@ int menuProduct(){
         printf("5. 저장\n");
         printf("6. 검색\n");
         printf("0. 종료\n");
+	printf("*******************\n");
 
         printf("\n=> 원하는 메뉴는? " );
         scanf("%d", &menu);
