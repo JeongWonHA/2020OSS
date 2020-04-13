@@ -177,7 +177,7 @@ void searchName(Product *a[], int count ){
                         searchPrint(a,x);
                 }
         }
-        if(z == 0) printf("검색된 결과 없음!\n");
+        if(z == 0) printf("=> 검색된 결과 없음!\n");
 }
 
 void searchPrice(Product *a[], int count){
@@ -192,7 +192,7 @@ void searchPrice(Product *a[], int count){
                 searchPrint(a,x);
 		}
 	}
-	if(z == 0) printf("검색된 결과 없음!\n");
+	if(z == 0) printf("=> 검색된 결과 없음!\n");
 }
 
 void searchStar(Product *a[], int count){
@@ -207,5 +207,5 @@ void searchStar(Product *a[], int count){
                 searchPrint(a,x);
 		}
         }
-	if(z == 0) printf("검색된 결과 없음!\n");
+	if(z == 0) printf("=> 검색된 결과 없음!\n");
 }
