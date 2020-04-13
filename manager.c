@@ -156,6 +156,7 @@ int searchProduct(Product *a[], int count){
 }
 void searchPrint(Product *a[], int x){
         printf("이름: %s\n무게: %dg\n가격: %d원\n표준가격: 10g 당%d원\n 평점: %d\n", a[x]->name, a[x]->gram, a[x]->price, a[x]->std_price, a[x]->star);
+	printf("-------------------\n");
 }
 
 void searchName(Product *a[], int count ){
