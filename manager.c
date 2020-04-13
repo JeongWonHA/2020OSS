@@ -26,7 +26,6 @@ int menuProduct(){
 void readProduct(Product *a[], int count ){
         for( int i = 0; i < count; i++){
 	if(a[i] == NULL){
-		count++;
 		continue;
 	}
         a[i]->std_price = a[i]->price / a[i]->gram;

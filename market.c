@@ -46,7 +46,6 @@ int main(){
 			delete_num = deleteProduct(a, count);
 			free(a[delete_num]);
 			a[delete_num] = NULL;
-			count--;
 		}else if(menu == 5){
 			#ifdef DEBUG
 				printf("DDEBUG[main.c] : call saveProduct()\n");
