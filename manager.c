@@ -78,13 +78,17 @@ int updateProduct(Product *a[], int count){
 
 int deleteProduct(Product *a[], int count){
 	int choose;
+	int choose2;
 	readProduct(a, count);
 	printf("삭제하고 싶은 제품번호?(0: 취소)");
-	scanf("%d",&choose);
-	if(choose == 0)
+	scanf("%d", &choose);
+	if(choose == 0 ) return 0;
+	printf("정말로 삭제하시겠습니까?(0: 취소, 1: 진행)");
+	scanf("%d",&choose2);
+	if(choose2 == 0)
 		 return 0;
 	else
-		return choose-1;
+		return choose;
 }
 
 int saveProduct(Product *a[], int count){

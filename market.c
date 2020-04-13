@@ -44,7 +44,8 @@ int main(){
 				printf("DDEBUG[main.c] : call loadProduct()\n");
 			#endif
 			delete_num = deleteProduct(a, count);
-			if(delete_num == 0) continue;
+			delete_num--;
+			if(delete_num == -1) continue;
 			free(a[delete_num]);
 			a[delete_num] = NULL;
 		}else if(menu == 5){
